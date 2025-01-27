@@ -1,0 +1,55 @@
+src/
+│
+├── app/
+│   ├── core/                          # Core services, constants, and utilities
+│   │   ├── services/                  # App-wide services (auth, logging, etc.)
+│   │   ├── interceptors/              # HTTP interceptors
+│   │   ├── guards/                    # Route guards
+│   │   └── core.module.ts             # Core module (singleton services, etc.)
+│   │
+│   ├── shared/                        # Shared UI components, pipes, directives
+│   │   ├── components/                # Reusable UI components (e.g., buttons, modals)
+│   │   ├── directives/                # Custom directives
+│   │   ├── pipes/                     # Custom pipes
+│   │   └── shared.module.ts           # Shared module for imports
+│   │
+│   ├── features/                      # Feature modules for business logic
+│   │   ├── feature1/                  # Folder for the first feature module
+│   │   │   ├── components/            # Feature-specific components
+│   │   │   ├── services/              # Feature-specific services
+│   │   │   ├── feature1.module.ts     # Feature-specific module
+│   │   │   └── feature1-routing.module.ts  # Feature routing module
+│   │   ├── feature2/                  # Folder for the second feature module
+│   │   │   ├── components/
+│   │   │   ├── services/
+│   │   │   └── feature2.module.ts
+│   │   └── ...
+│   │
+│   ├── store/                         # NgRx Store or any state management
+│   │   ├── actions/                   # NgRx actions
+│   │   ├── reducers/                  # NgRx reducers
+│   │   ├── selectors/                 # NgRx selectors
+│   │   ├── effects/                   # NgRx effects
+│   │   └── store.module.ts            # Store module (combine actions, reducers, etc.)
+│   │
+│   ├── layouts/                       # Shared layout components (e.g., header, footer, sidebar)
+│   ├── routing/                       # Global routing setup
+│   ├── app.component.ts               # Main app component
+│   ├── app.module.ts                  # Main app module
+│   └── app-routing.module.ts          # App-level routing setup
+│
+├── assets/                            # Static assets (images, fonts, styles)
+│   ├── images/
+│   ├── styles/                        # Global styles, variables, themes
+│   └── i18n/                          # Translations
+│
+├── environments/                      # Environment configurations (e.g., dev, prod)
+│   ├── environment.ts
+│   ├── environment.prod.ts
+│   └── environment.staging.ts
+│
+├── e2e/                               # End-to-end tests
+│   └── src/
+│       └── app.e2e-spec.ts
+│
+└── index.html                         # Main HTML file

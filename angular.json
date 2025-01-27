@@ -41,7 +41,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [],
+            "scripts": [
+              "./public/js/nav.js"
+            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
